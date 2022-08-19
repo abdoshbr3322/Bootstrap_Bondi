@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Design</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="header navbar-nav">
+    <header class="fixed-top">
+      <div class="container">
+        <div class="navbar navbar-expand-md px-2">
+          <div class="container-fluid row row-cols-auto">
+            <div class="col me-auto">
+              <div class="navbar-brand">
+                <img src="./imgs/logo.png" alt="Logo Image" />
+              </div>
+            </div>
+            <div
+              class="col col-12 col-md-auto order-last order-md-0"
+              style="flex-grow: 0"
+            >
+              <div class="collapse navbar-collapse" id="mobile-menu">
+                <ul
+                  class="navbar-nav navbar-nav-scroll align-items-md-center py-3 py-md-0"
+                  style="max-height: calc(100vh - 70px)"
+                >
+                  <li class="nav-item">
+                    <a href="#home" class="d-block px-md-3 py-3 py-md-2 active"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#services" class="d-block px-md-3 py-3 py-md-2"
+                      >Services</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#portfolio" class="d-block px-md-3 py-3 py-md-2"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#about" class="d-block px-md-3 py-3 py-md-2"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#contact" class="d-block px-md-3 py-3 py-md-2"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button
+              class="d-block btn btn-primary me-3"
+              data-bs-toggle="modal"
+              data-bs-target="#sign-in-modal"
+            >
+              Sign In
+            </button>
+
+            <button
+              class="navbar-toggler px-2 py-1"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobile-menu"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="modal fade" id="sign-in-modal">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content sign-up">
+          <form action="">
+            <div class="modal-header">
+              <h3 class="modal-title">Sign In</h3>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row gy-3">
+                <div class="col col-12 col-lg-6">
+                  <label class="mb-1" for="name">Inter Name</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="col col-12 col-lg-6">
+                  <label class="mb-1" for="mail">Inter Email</label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="mail"
+                    id="mail"
+                    placeholder="Emali"
+                  />
+                </div>
+                <div class="col col-12">
+                  <button
+                    class="btn btn-secondary w-100 text-sart"
+                    type="button"
+                  >
+                    <i class="fa-brands fa-google me-2"></i>Sign in with Google
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+                type="button"
+              >
+                Close
+              </button>
+              <input type="submit" class="btn btn-warning" value="Sign in" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="banner d-flex justify-content-center align-items-center flex-column text-center text-white min-vh-100"
+      id="home"
+    >
+      <div class="container">
+        <h1 class="heading mb-2">Taste The Creativity</h1>
+        <h6 class="sub-heading text-white-50 fw-bold">
+          We make awesome graphic and web design
+        </h6>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+    </div>
+    <div class="services py-5" id="services">
+      <div class="container">
+        <div class="main-heading text-center mb-5">
+          <img src="./imgs/title.png" alt="" />
+          <h3 class="mb-3">We Are Good At</h3>
+          <h6 class="sub-heading text-black-50 text-uppercase position-relative">SOME OF THESE STUFF UNDER</h6>
+        </div>
+        <div class="content row">
+          <div class="col col-12 col-md-6 col-lg-4">
+            <div class="serv text-center">
+              <h2 class="number mb-2 position-relative mb-3">
+                <i class="fa-solid fa-1"></i>
+                <i
+                  class="fa-solid fa-pencil position-absolute bottom-0 icon"
+                ></i>
+              </h2>
+              <h4 class="title mb-3 text-uppercase">Graphic Design</h4>
+              <p class="info text-black-50">
+                Pellentesque in ipsum id orci porta dapibus. Vivamus magna
+                justo, lacinia eget consectetur sed, convallis at tellus.
+              </p>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4">
+            <div class="serv text-center">
+              <h2 class="number mb-2 position-relative mb-3">
+                <i class="fa-solid fa-2"></i>
+                <i class="fa-solid fa-tv position-absolute bottom-0 icon"></i>
+              </h2>
+              <h4 class="title mb-3 text-uppercase">Web Development</h4>
+              <p class="info text-black-50">
+                Pellentesque in ipsum id orci porta dapibus. Vivamus magna
+                justo, lacinia eget consectetur sed, convallis at tellus.
+              </p>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4">
+            <div class="serv text-center">
+              <h2 class="number mb-2 position-relative mb-3">
+                <i class="fa-solid fa-3"></i>
+                <i class="fa-solid fa-plug position-absolute bottom-0 icon"></i>
+              </h2>
+              <h4 class="title mb-3 text-uppercase">Mobile Apps</h4>
+              <p class="info text-black-50">
+                Pellentesque in ipsum id orci porta dapibus. Vivamus magna
+                justo, lacinia eget consectetur sed, convallis at tellus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio py-5" id="portfolio">
+      <div class="container">
+        <div class="main-heading text-center mb-5">
+          <img src="./imgs/title.png" alt="" />
+          <h3 class="mb-3">We Make This</h3>
+          <h6 class="sub-heading text-black-50 text-uppercase position-relative">Prepare To Be Amazed</h6>
+        </div>
+        <div class="categories">
+          <ul class="nav justify-content-center mb-4">
+            <div class="nav-item">
+              <a href="#" class="nav-link px-3 py-2 nav-link-active">All</a>
+            </div>
+            <div class="nav-item">
+              <a href="#" class="nav-link px-3 py-2">Design</a>
+            </div>
+            <div class="nav-item">
+              <a href="#" class="nav-link px-3 py-2">Code</a>
+            </div>
+            <div class="nav-item">
+              <a href="#" class="nav-link px-3 py-2">Photo</a>
+            </div>
+            <div class="nav-item">
+              <a href="#" class="nav-link px-3 py-2">App</a>
+            </div>
+          </ul>
+        </div>
+        <div
+          class="content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4 mb-5"
+        >
+          <div class="col">
+            <div class="project position-relative overflow-hidden shadow">
+              <div
+                class="overlay user-select-none position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center text-white"
+              >
+                Application
+              </div>
+              <img src="./imgs/work-01.jpg" alt="work" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="project position-relative overflow-hidden shadow">
+              <div
+                class="overlay user-select-none position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center text-white"
+              >
+                Application
+              </div>
+              <img src="./imgs/work-02.jpg" alt="work" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="project position-relative overflow-hidden shadow">
+              <div
+                class="overlay user-select-none position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center text-white"
+              >
+                Application
+              </div>
+              <img src="./imgs/work-03.jpg" alt="work" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="project position-relative overflow-hidden shadow">
+              <div
+                class="overlay user-select-none position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center text-white"
+              >
+                Application
+              </div>
+              <img src="./imgs/work-04.jpg" alt="work" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="project position-relative overflow-hidden shadow">
+              <div
+                class="overlay user-select-none position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center text-white"
+              >
+                Application
+              </div>
+              <img src="./imgs/work-05.jpg" alt="work" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="project position-relative overflow-hidden shadow">
+              <div
+                class="overlay user-select-none position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center text-white"
+              >
+                Application
+              </div>
+              <img src="./imgs/work-06.jpg" alt="work" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="project position-relative overflow-hidden shadow">
+              <div
+                class="overlay user-select-none position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center text-white"
+              >
+                Application
+              </div>
+              <img src="./imgs/work-07.jpg" alt="work" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="project position-relative overflow-hidden shadow">
+              <div
+                class="overlay user-select-none position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center text-white"
+              >
+                Application
+              </div>
+              <img src="./imgs/work-08.jpg" alt="work" />
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary mx-auto d-block">I Want More</button>
+      </div>
+    </div>
+    <div class="about py-5" id="about">
+      <div class="container">
+        <div class="main-heading text-center mb-5">
+          <img src="./imgs/title.png" alt="" />
+          <h3 class="mb-3">Some Stuff About Us</h3>
+          <h6 class="sub-heading text-black-50 text-uppercase position-relative">The Great Team</h6>
+        </div>
+        <p class="info mx-auto text-center text-black-50 fw-bold mb-5">
+          Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit,
+          eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta
+          dapibus. Proin eget tortor risus. Donec sollicitudin molestie
+          malesuada.
+        </p>
+        <div class="content row">
+          <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+            <h3 class="title mb-3">Retina Design</h3>
+            <p class="text lh-base text-black-50 fw-bold mb-3">
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+              dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              <br />
+              <br />
+              Donec rutrum congue leo eget malesuada. Mauris blandit aliquet
+              elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id
+              orci porta dapibus. Proin eget tortor risus. Donec sollicitudin
+              molestie malesuada.
+            </p>
+            <button class="btn btn-primary text-uppercase">Order Me One</button>
+          </div>
+          <div class="col">
+            <img src="./imgs/laptop.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact py-5" id="contact">
+      <div class="container">
+        <div class="heading text-center mb-5">
+          <h3 class="fw-bold">Meet The Teem</h3>
+          <p class="text-black-50 fw-bold">
+            Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit,
+            eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta
+            dapibus. Proin eget tortor risus. Donec sollicitudin molestie
+            malesuada.
+          </p>
+        </div>
+        <div class="content row gy-5">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="member bg-white">
+              <div class="avatar">
+                <img class="w-100" src="./imgs/team-1.png" alt="team" />
+              </div>
+              <h4 class="name py-3 text-center text-white fw-bold">
+                Luke Skywalker
+              </h4>
+              <div class="quote text-center text-black-50 fw-bold py-2 px-2">
+                <blockquote>
+                  “I don't understand how we got by those troops. I thought we
+                  were dead.“
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="member bg-white">
+              <div class="avatar">
+                <img class="w-100" src="./imgs/team-2.png" alt="team" />
+              </div>
+              <h4 class="name py-3 text-center text-white fw-bold">
+                Luke Skywalker
+              </h4>
+              <div class="quote text-center text-black-50 fw-bold py-2 px-2">
+                <blockquote>
+                  “I don't understand how we got by those troops. I thought we
+                  were dead.“
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="member bg-white">
+              <div class="avatar">
+                <img class="w-100" src="./imgs/team-3.png" alt="team" />
+              </div>
+              <h4 class="name py-3 text-center text-white fw-bold">
+                Luke Skywalker
+              </h4>
+              <div class="quote text-center text-black-50 fw-bold py-2 px-2">
+                <blockquote>
+                  “I don't understand how we got by those troops. I thought we
+                  were dead.“
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="member bg-white">
+              <div class="avatar">
+                <img class="w-100" src="./imgs/team-4.png" alt="team" />
+              </div>
+              <h4 class="name py-3 text-center text-white fw-bold">
+                Luke Skywalker
+              </h4>
+              <div class="quote text-center text-black-50 fw-bold py-2 px-2">
+                <blockquote>
+                  “I don't understand how we got by those troops. I thought we
+                  were dead.“
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clients py-5">
+      <div class="container">
+        <div class="content row gx-3 gy-4 justify-content-between">
+          <div class="col col-6 col-md-4 col-lg-2 text-center">
+            <img class="align-baseline" src="./imgs//tech-1.png" alt="client" />
+          </div>
+          <div class="col col-6 col-md-4 col-lg-2 text-center">
+            <img class="align-baseline" src="./imgs//tech-2.png" alt="client" />
+          </div>
+          <div class="col col-6 col-md-4 col-lg-2 text-center">
+            <img class="align-baseline" src="./imgs//tech-3.png" alt="client" />
+          </div>
+          <div class="col col-6 col-md-4 col-lg-2 text-center">
+            <img class="align-baseline" src="./imgs//tech-4.png" alt="client" />
+          </div>
+          <div class="col col-6 col-md-4 col-lg-2 text-center">
+            <img class="align-baseline" src="./imgs//tech-1.png" alt="client" />
+          </div>
+          <div class="col col-6 col-md-4 col-lg-2 text-center">
+            <img class="align-baseline" src="./imgs//tech-2.png" alt="client" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="start-project py-5">
+      <div class="container">
+        <div class="heading text-center mb-5">
+          <h3 class="fw-bold text-white">Start Your Project Now</h3>
+          <p class="text-white-50 fw-bold">Leave your description and we start the engine.Don't worry,you can cancel anytime</p>
+        </div>
+        <button class="btn btn-primary text-uppercase d-block mx-auto">Start Project</button>
+      </div>
+    </div>
+    <div class="blog py-5">
+      <div class="container">
+        <div class="main-heading text-center mb-5">
+          <img src="./imgs/title.png" alt="" />
+          <h3 class="mb-3">Read Our Blog</h3>
+          <h6 class="sub-heading text-black-50 text-uppercase position-relative">New Stories</h6>
+        </div>
+        <div class="content row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 mb-5">
+          <div class="col">
+            <div class="post rounded border overflow-hidden">
+              <img src="./imgs/blog-1.jpg" alt="post">
+              <div class="info py-3 px-3">
+                <h6 class="date text-black-50 fw-bo">Jan 17, 2022</h6>
+                <h5 class="title">Some Awesome Blog Title Here</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="post rounded border overflow-hidden">
+              <img src="./imgs/blog-2.jpg" alt="post">
+              <div class="info py-3 px-3">
+                <h6 class="date text-black-50 fw-bo">Jan 17, 2022</h6>
+                <h5 class="title">Some Awesome Blog Title Here</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="post rounded border overflow-hidden">
+              <img src="./imgs/blog-3.jpg" alt="post">
+              <div class="info py-3 px-3">
+                <h6 class="date text-black-50 fw-bo">Jan 17, 2022</h6>
+                <h5 class="title">Some Awesome Blog Title Here</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary text-uppercase d-block mx-auto">More Stories</button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.min.js"
+      integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
