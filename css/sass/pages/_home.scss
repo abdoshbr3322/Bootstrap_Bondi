@@ -88,3 +88,18 @@
 .start-project {
   background-color: var(--ps-bg-color);
 }
+.subscribe {
+  background-color: var(--secondary-color);
+  form {
+    input[type="email"] {
+      border-bottom: 1px solid white;
+      &::placeholder {
+        color: white;
+      }
+    }
+    [type=submit] {
+      background-color: var(--ps-bg-color);
+      color: var(--secondary-color)
+    }
+  }
+}

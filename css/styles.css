@@ -210,4 +210,22 @@ header .navbar-nav .nav-item a:hover, header .navbar-nav .nav-item a.active {
   background-color: var(--ps-bg-color);
 }
 
+.subscribe {
+  background-color: var(--secondary-color);
+}
+.subscribe form input[type=email] {
+  border-bottom: 1px solid white;
+}
+.subscribe form input[type=email]::placeholder {
+  color: white;
+}
+.subscribe form [type=submit] {
+  background-color: var(--ps-bg-color);
+  color: var(--secondary-color);
+}
+
+footer {
+  background-color: var(--ps-bg-color);
+}
+
 /*# sourceMappingURL=styles.css.map */
